@@ -1,23 +1,25 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { BuildingScene } from './scenes/BuildingScene';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="container">
+          <div className="row d-flex justify-content-start align-items-center">
+            <div className="col flex-grow-0">
+              <img src={logo} className="App-logo" alt="logo" />
+            </div>
+            <div className="col flex-grow-1">
+              <h1 className="text-light">
+                <small>Three.js structure modeled in Blender</small>
+              </h1>
+            </div>
+          </div>
+        </div>
       </header>
+      <BuildingScene />
     </div>
   );
 }
