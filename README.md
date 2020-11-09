@@ -4,7 +4,17 @@ Playing around with importing 3D models created in Blender into Three.js.
 
 Implemented first-person controls.
 
-------
+## To add new blender exports:
+
+- export the blender model as a `.glb` file
+- place the `.glb` file in your project root
+- run `yarn 3d-to-jsx <path/to/my_model.glb> -t`
+  - [more cli options](https://github.com/pmndrs/gltfjsx#usage)
+- move the `.glb` file to your `/public` dir
+- move the `.tsx` file to your project and use inside a `<Canvas>` element
+- _note - much of the above could prob be automated_
+
+---
 
 # Getting Started with Create React App
 
@@ -76,4 +86,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # three-js-building

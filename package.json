@@ -25,7 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "convert-3d-model": "npx @react-three/gltfjsx"
+    "3d-to-jsx": "npx @react-three/gltfjsx"
   },
   "eslintConfig": {
     "extends": [
